@@ -304,7 +304,7 @@ class FlushbarRoute<T> extends OverlayRoute<T> {
 
         if (!isCurrent) {
           navigator!.finalizeRoute(this);
-          assert(overlayEntries.isEmpty);
+          overlayEntries.clear();
         }
         break;
     }
